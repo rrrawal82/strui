@@ -40,18 +40,18 @@ right: 2rem;
 
  
     .modal {{
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 66px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 106%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    border-radius: 10px;
+   display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 66px; /* Location of the box */
+  left: 0;
+  top: -7%;
+  width: 100%; /* Full width */
+  height: 115%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  border-radius: 10px;
     }}
 
     .modal-content {{
@@ -129,4 +129,4 @@ javascript_code = f"""
 st.markdown(javascript_code, unsafe_allow_html=True)
 
 # Your Streamlit content inside the styled container
-st.markdown(f'<html><div class="main" style=" position: fixed; bottom: 23px; right: 28px; display:block; "> <img src="{charcater_path}" style="border-radius: 50%;width:90% ;border:5px solid black;"><br><br>   <button class="open-button" id="myBtn" onClick="javascript:modal.style.display = "block""  style= " background-color: #010000;color: white; padding: 16px 20px;border: none;border-radius: 8px;cursor: pointer;width: 200px;height:55px">Ask about it</button> </div> <div id="myModal" class="modal"> <div class="modal-content"> <div> <span class="close">&times;</span> <video width="1000" height="700" style="margin-top:-50px;margin-left:100px"  autoplay loop  muted> <source src="{video}" type="video/mp4">  <source src="movie.ogg" type="video/ogg">  <div style="margin-left:45%;  margin-top:-3%;">  <button type="reset"  class=".button-chat" style="background-color:transparent; border-color:transparent;">  <img src="{micImg}" height="55"/></button> <button type="reset"  class="button-mic" style="background-color:transparent; border-color:transparent;">  <img src="{chatImg}" height="55"/></button> </div> </div></div></div> </html>', unsafe_allow_html=True)
+st.markdown(f'<html><div class="main" style=" position: fixed; bottom: 23px; right: 28px; display:block; "> <img src="{charcater_path}" style="border-radius: 50%;width:90% ;border:5px solid black;"><br><br>   <button class="open-button" id="myBtn" onClick="javascript:modal.style.display = "block""  style= " background-color: #010000;color: white; padding: 16px 20px;border: none;border-radius: 8px;cursor: pointer;width: 200px;height:55px">Ask about it</button> </div> <div id="myModal" class="modal"> <div class="modal-content"> <div> <span class="close">&times;</span> <video width="1000" height="700" style="margin-top:-50px;margin-left:20px"  autoplay loop  muted> <source src="{video}" type="video/mp4">  <source src="movie.ogg" type="video/ogg">  <div style="margin-left:45%;  margin-top:-5%;">  <button type="reset"  class=".button-chat" style="background-color:transparent; border-color:transparent;">  <img src="{micImg}" height="55"/></button> <button type="reset"  class="button-mic" style="background-color:transparent; border-color:transparent;">  <img src="{chatImg}" height="55"/></button> </div> </div></div></div> </html>', unsafe_allow_html=True)
