@@ -1,0 +1,7 @@
+streamlit_lottie
+streamlit
+requests
+Pillow
+protobuf
+watchdog
+plotly
